@@ -5867,3 +5867,32 @@ color: var(--white-color) !important;
     flex: 1 1 100%;
   }
 }
+
+.features-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.feature:hover {
+  background-color: #151717; /* light blue shade or any you prefer */
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.section-title {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #333; /* You can change this color as needed */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
